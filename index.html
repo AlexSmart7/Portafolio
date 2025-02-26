@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--  Metadatos  -->
+    <meta charset="UTF-8">
+    <meta name="author" content="Alex Ceja">
+    <meta name="description" content="Portafolio de Desarrollos Web de Alex Ceja">
+    <meta name="keywords" content="HTML, CSS, JS, React">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    <!--  Bootstrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!--  Iconos de Bootstrap  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!--  CSS  -->
+    <link href="style.css" rel="stylesheet">
+
+    <!--  Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&display=swap" rel="stylesheet">
+
+    <!--  Titulo -->
+    <title>Portafolio Alex Ceja | Desarrollo Web</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="img/K-trin157.jfif">
+
+</head>
+<body>
+    
+    <!-- Barra de Navegacion -->
+    
+    <nav class="navbar navbar-expand-md navbar-ligth">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
+                aria-controls="navbar-toggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-toggler">
+                <a class="navbar-brand" href="#">
+                    <img src="img/K-trin157.jfif" width="50" alt="Logo de la pagina web">
+                </a>
+                <ul class="navbar-nav d-flex justify-content-center align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre mi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#proyectos">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experiencia">Experiencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--  Seccion Hero  -->
+
+    <section class="hero align-items-stretch">
+        <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+            <img class="hero-img-perfil rounded-circle" src="img/Perfil.png" alt="Foto de Perfil">
+            <h1>Hola soy Alex Ceja</h1>
+            <h2>Desarrollador de Sitios Web</h2>
+        </div>
+        <div class="hero-inferior">
+            <img  class="hero-inferior-imagen img-fluid" src="img/Skills.png" alt="Skills de Desarrollo">
+        </div>
+    </section>
+
+    <!--  About Me  -->
+    <section id="sobre-mi" class="sobre-mi seccion-oscura">
+        <div class="contenedor">
+            <h2 class="seccion-titulo">Conoce a Alex Ceja</h2>
+            <p class="seccion-texto">Soy un Profesional con más de 10 años de experiencia en el área de tecnologías de la información.</p>         
+            <p class="seccion-texto">De los cuales tengo 2 años como Desarrollador Web, con experiencia en proyectos, mejoras de diseño y verificación de código,
+                así como en el diseño y desarrollo de sitios responsivos y aplicaciones web, contando con habilidades en distintos lenguajes de programación de frontend y backend.     
+            </p>
+        </div>
+    </section>
+
+    <!--  Skills  -->
+
+    <section class="skill seccion-clara">
+        <div class="container text-center">
+            <div class="row">
+                <!--  Desarrollo Web  -->
+                <div class="columna col-12 col-md-4">
+                    <i class="bi bi-laptop"></i>
+                    <p class="skill-titulo">Desarrollo Web</p>
+                    <p>Skills en distintos lenguajes de programacion para Desarrollo de Software</p>
+                    <div class="badges-contenedor">
+                        <span class="badge text-bg-primary">HTML</span>
+                        <span class="badge text-bg-primary">CSS</span>
+                        <span class="badge text-bg-primary">JS</span>
+                        <span class="badge text-bg-primary">React</span>
+                        <span class="badge text-bg-primary">ASP.Net</span>
+                    </div>
+                </div>
+                <!--  Articulos  -->
+                <div class="columna col-12 col-md-4">
+                    <i class="bi bi-database"></i>
+                    <p class="skill-titulo">Bases de Datos</p>
+                    <p>Manejo de Bases de datos Relacionales y No Relacionales</p>
+                    <div class="badges-contenedor">
+                        <span class="badge text-bg-primary">Sql Server</span>
+                        <span class="badge text-bg-primary">MySql</span>
+                        <span class="badge text-bg-primary">Mongo DB</span>
+                    </div>
+                </div>
+                <!--  Estudiante  -->
+                <div class="columna col-12 col-md-4">
+                    <i class="bi bi-journal-code"></i>
+                    <p class="skill-titulo">Cursos</p>
+                    <p>Comprometido con la inovacion y el aprendizaje continuo para estar actualizado en las nuevas tecnologias.</p>
+                    <div class="badges-contenedor">
+                        <span class="badge text-bg-primary">Python</span>
+                        <span class="badge text-bg-primary">DevOps</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  Proyect  -->
+
+    <section id="proyectos" class="proyectos-recientes seccion-clara d-fle flex-column">
+        <h2 class="seccion-titulo texto-negro">Proyectos Recientes</h2>
+        <h3 class="seccion-descripcion">Estos son algunos Proyectos Realizados.</h3>
+        <!-- Galeria de Proyectos -->
+         <div class="container text-center proyecto-contenedor">
+            <div class="row">
+                <!--Proyecto 1-->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="proyecto">
+                        <img src="img/proyecto1.png" alt="Proyecto 1">
+                        <div class="overlay">
+                            <p>Proyecto 1</p>
+                            <div class="iconos-contenedor">
+                                <a href="" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-github"></i>
+                                </a>
+                                <a href="" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-laptop"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Proyecto 2-->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="proyecto">
+                        <img src="img/proyecto2.png" alt="Proyecto 2">
+                        <div class="overlay">
+                            <p>Proyecto 2</p>
+                            <div class="iconos-contenedor">
+                                <a href="" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-github"></i>
+                                </a>
+                                <a href="" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-laptop"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Proyecto 3-->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="proyecto">
+                        <img src="img/proyecto3.png" alt="Proyecto 3">
+                        <div class="overlay">
+                            <p>Proyecto 3</p>
+                            <div class="iconos-contenedor">
+                                <a href="" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-github"></i>
+                                </a>
+                                <a href="" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-laptop"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Proyecto 4-->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="proyecto">
+                        <img src="img/proyecto4.png" alt="Proyecto 4">
+                        <div class="overlay">
+                            <p>Proyecto 4</p>
+                            <div class="iconos-contenedor">
+                                <a href="" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-github"></i>
+                                </a>
+                                <a href="" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-laptop"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Proyecto 5-->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="proyecto">
+                        <img src="img/proyecto5.png" alt="Proyecto 5">
+                        <div class="overlay">
+                            <p>Proyecto 5</p>
+                            <div class="iconos-contenedor">
+                                <a href="" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-github"></i>
+                                </a>
+                                <a href="" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-laptop"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Proyecto 6-->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="proyecto">
+                        <img src="img/proyecto6.png" alt="Proyecto 6">
+                        <div class="overlay">
+                            <p>Proyecto 6</p>
+                            <div class="iconos-contenedor">
+                                <a href="" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-github"></i>
+                                </a>
+                                <a href="" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-laptop"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+         <a href="" target="_blank" rel="noopener noreferrer">
+         <button type="button" class="btn btn-info">
+            Ver mas Proyectos
+            <i class="bi bi-arrow-right-circle-fill"></i>
+        </button>
+        </a>
+    </section>
+
+    <!--  Experiencia  -->
+
+    <section id="experiencia" class="articulos justify-content-start">
+        <h2 class="seccion-titulo texto-negro">Experiencia Laboral</h2>
+        <div class="card">
+            <div class="card-header">
+              Empresas
+            </div>
+            <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Consultor en Desarrollo y BI 
+                        <p>YoConsulting, Monterrey – NL</p>
+                        <p>Oct21 - Actual</p>
+                    </li>
+                    <li class="list-group-item">Consultor Dev SAS 
+                        <p>Indra - Minsait, Torre BBVA, CDMX</p>
+                        <p>Jul22 - Nov23</p>
+                    </li>
+                    <li class="list-group-item">Analista de Información DB 
+                        <p>FinComun, Corporativo FinComun, CDMX</p>
+                        <p>Dic21 - Jul22</p>
+                    </li>
+                    <li class="list-group-item">Consultor de Data Science 
+                        <p>Adelanto Digital, Montes Urales 715, CDMX</p>
+                        <p>Oct17 - Oct21</p>
+                    </li>
+            </ul>
+          </div>
+          <br/>
+          <br/>
+    </section>
+
+    <!--  Contacto  -->
+
+    <section id="contacto" class="contacto seccion-oscura">
+        <div class="container">
+            <div class="container text-center rectangulo d-flex justify-content-evenly">
+                <div class="row">
+                    <div class="col-12 col-md-4 seccion-titulo">
+                        Contactame!
+                    </div>
+                    <div class="col-12 col-md-4 descripcion">
+                        Iniciemos tu proyecto de desarrollo web y logremos tu sueño realidad. 
+                    </div>
+                    <div class="col-12 col-md-4 ">
+                        <a href="mailto:el.ktrin157@gmail.com">
+                            <button type="button" >
+                            Contacto
+                            <i class="bi bi-envelope-at-fill"></i>
+                            </button>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--  Pie de Pagina   -->
+
+    <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
+        <img class="footer-logo" src="img/Code.JPG" alt="Logo del Portafolio">
+        <p class="footer-texto text-center">Aprendo y creo todos los dias.<br/>Creemos un proyecto juntos.</p>
+        <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-github"></i>
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-instagram"></i>
+            </a>
+            <a href="" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-whatsapp"></i>
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-envelope"></i>
+            </a>
+        </div>
+        <div class="derechos-de-autor">Creado por Alex Ceja (2025) &#169;</div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
